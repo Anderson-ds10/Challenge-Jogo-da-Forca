@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.911), rgb(175, 2, 2), rgba(0, 0, 0, 0.911));
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+#imagem-forca{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+#imagem-forca > img{
+    width: 200px; 
+}
+#container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#palavra-secreta{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.letra{
+    flex-direction: row;
+    width: 18px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-left: 20px;
+}
+.letra-espaco{
+    flex-direction: row;
+    width: 18px;
+    text-align: center;
+    margin-left: 20px;
+}
+#teclado{
+    margin-top: 30px;
+}
+.teclas{
+    padding: 5px;
+}
+.teclas > button{
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px black;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.teclas > button:disabled{
+    cursor: not-allowed;
+}
+
+.teclas > button:hover{
+    transform: scale(1.3);
+}
+#btn-reiniciar{
+    background-color: rgba(255, 174, 0, 0.815);
+}
+
+@media screen and (min-width: 400px){
+    body{
+        background: linear-gradient(to right, black, rgb(175, 2, 2), black);
+    }
+    #palavra-secreta{
+        font-size: 2em;
+    }
+    .letra{
+        width: 23px;
+    }
+    .teclas > button{
+        font-size: 20px;
+        width: 32px;
+        height: 32px;
+    }
+}
+@media screen and (min-width: 600px){
+    #palavra-secreta{
+        font-size: 2.5em;
+    }
+    .letra{
+        width: 28px;
+    }
+    .teclas > button{
+        font-size: 26px;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+    }
+}

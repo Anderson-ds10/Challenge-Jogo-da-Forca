@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    background: linear-gradient(to right, black, rgb(175, 2, 2), black);
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 380px;
+    height: 80px;
+}
+h1{
+    text-align: center;
+    font-size: 42px;
+    padding: 5px;
+}
+h2{
+    font-weight: bold;
+    color: black;
+}
+#logo{
+    width: 450px;
+}
+#startbtn{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 174, 0, 0.815);
+    cursor: pointer;
+    transition: 1s;
+}
+#startbtn:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#divbtn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
+.imagemfooter{
+    padding: 0 5px 0 5px;
+}
+.imagemfooter:hover{
+    transform: scale(1.4);
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+img {
+    animation: neon 1s alternate infinite ease-in-out;
+}
+
+#logo{
+    --cor-neon: red;
+}
