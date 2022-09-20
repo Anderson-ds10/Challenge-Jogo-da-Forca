@@ -12,6 +12,8 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
+    width: 210px;
+    height: 275px;
 }
 #imagem-forca > img{
     width: 200px; 
